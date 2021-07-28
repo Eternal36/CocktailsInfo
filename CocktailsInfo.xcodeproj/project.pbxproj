@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		EC92540F26AD9BD500AF6CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92540E26AD9BD500AF6CFF /* AppDelegate.swift */; };
 		EC92541126AD9BD500AF6CFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92541026AD9BD500AF6CFF /* SceneDelegate.swift */; };
-		EC92541326AD9BD500AF6CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92541226AD9BD500AF6CFF /* ViewController.swift */; };
 		EC92541626AD9BD500AF6CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC92541426AD9BD500AF6CFF /* Main.storyboard */; };
 		EC92541826AD9BD900AF6CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC92541726AD9BD900AF6CFF /* Assets.xcassets */; };
 		EC92541B26AD9BD900AF6CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC92541926AD9BD900AF6CFF /* LaunchScreen.storyboard */; };
+		EC92542526AD9C9200AF6CFF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92542426AD9C9200AF6CFF /* SearchViewController.swift */; };
+		EC92542826AD9D5C00AF6CFF /* CocktailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92542726AD9D5C00AF6CFF /* CocktailViewCell.swift */; };
+		EC92542D26AD9E2C00AF6CFF /* CockailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92542C26AD9E2C00AF6CFF /* CockailData.swift */; };
+		EC92543026ADA5D500AF6CFF /* CocktailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92542F26ADA5D500AF6CFF /* CocktailManager.swift */; };
+		EC92543A26ADC7EF00AF6CFF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92543926ADC7EF00AF6CFF /* DetailViewController.swift */; };
+		EC92544026AEBA1F00AF6CFF /* UIImage+downloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92543F26AEBA1F00AF6CFF /* UIImage+downloadImage.swift */; };
+		EC92544326B02A8500AF6CFF /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92544226B02A8500AF6CFF /* Ingredient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC92540B26AD9BD500AF6CFF /* CocktailsInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailsInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC92540E26AD9BD500AF6CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC92541026AD9BD500AF6CFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC92541226AD9BD500AF6CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC92541526AD9BD500AF6CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC92541726AD9BD900AF6CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC92541A26AD9BD900AF6CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC92541C26AD9BD900AF6CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC92542426AD9C9200AF6CFF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EC92542726AD9D5C00AF6CFF /* CocktailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailViewCell.swift; sourceTree = "<group>"; };
+		EC92542C26AD9E2C00AF6CFF /* CockailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CockailData.swift; sourceTree = "<group>"; };
+		EC92542F26ADA5D500AF6CFF /* CocktailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailManager.swift; sourceTree = "<group>"; };
+		EC92543926ADC7EF00AF6CFF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EC92543F26AEBA1F00AF6CFF /* UIImage+downloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+downloadImage.swift"; sourceTree = "<group>"; };
+		EC92544226B02A8500AF6CFF /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +69,44 @@
 			isa = PBXGroup;
 			children = (
 				EC92540E26AD9BD500AF6CFF /* AppDelegate.swift */,
+				EC92543F26AEBA1F00AF6CFF /* UIImage+downloadImage.swift */,
 				EC92541026AD9BD500AF6CFF /* SceneDelegate.swift */,
-				EC92541226AD9BD500AF6CFF /* ViewController.swift */,
 				EC92541426AD9BD500AF6CFF /* Main.storyboard */,
+				EC92543C26ADC7F700AF6CFF /* Views */,
 				EC92541726AD9BD900AF6CFF /* Assets.xcassets */,
 				EC92541926AD9BD900AF6CFF /* LaunchScreen.storyboard */,
 				EC92541C26AD9BD900AF6CFF /* Info.plist */,
+				EC92543726ADB31000AF6CFF /* Networking */,
+				EC92542A26AD9E0100AF6CFF /* Models */,
 			);
 			path = CocktailsInfo;
+			sourceTree = "<group>";
+		};
+		EC92542A26AD9E0100AF6CFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC92542C26AD9E2C00AF6CFF /* CockailData.swift */,
+				EC92544226B02A8500AF6CFF /* Ingredient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC92543726ADB31000AF6CFF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EC92542F26ADA5D500AF6CFF /* CocktailManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EC92543C26ADC7F700AF6CFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC92542426AD9C9200AF6CFF /* SearchViewController.swift */,
+				EC92543926ADC7EF00AF6CFF /* DetailViewController.swift */,
+				EC92542726AD9D5C00AF6CFF /* CocktailViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC92541326AD9BD500AF6CFF /* ViewController.swift in Sources */,
+				EC92542526AD9C9200AF6CFF /* SearchViewController.swift in Sources */,
+				EC92543026ADA5D500AF6CFF /* CocktailManager.swift in Sources */,
+				EC92544326B02A8500AF6CFF /* Ingredient.swift in Sources */,
 				EC92540F26AD9BD500AF6CFF /* AppDelegate.swift in Sources */,
+				EC92542D26AD9E2C00AF6CFF /* CockailData.swift in Sources */,
+				EC92542826AD9D5C00AF6CFF /* CocktailViewCell.swift in Sources */,
+				EC92544026AEBA1F00AF6CFF /* UIImage+downloadImage.swift in Sources */,
 				EC92541126AD9BD500AF6CFF /* SceneDelegate.swift in Sources */,
+				EC92543A26ADC7EF00AF6CFF /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
