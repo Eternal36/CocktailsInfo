@@ -19,6 +19,7 @@
 		EC92543A26ADC7EF00AF6CFF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92543926ADC7EF00AF6CFF /* DetailViewController.swift */; };
 		EC92544026AEBA1F00AF6CFF /* UIImage+downloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92543F26AEBA1F00AF6CFF /* UIImage+downloadImage.swift */; };
 		EC92544326B02A8500AF6CFF /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92544226B02A8500AF6CFF /* Ingredient.swift */; };
+		EC92545426B2C95B00AF6CFF /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = EC92545326B2C95B00AF6CFF /* README.MD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EC92543926ADC7EF00AF6CFF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EC92543F26AEBA1F00AF6CFF /* UIImage+downloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+downloadImage.swift"; sourceTree = "<group>"; };
 		EC92544226B02A8500AF6CFF /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		EC92545326B2C95B00AF6CFF /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		EC92540226AD9BD500AF6CFF = {
 			isa = PBXGroup;
 			children = (
+				EC92545326B2C95B00AF6CFF /* README.MD */,
 				EC92540D26AD9BD500AF6CFF /* CocktailsInfo */,
 				EC92540C26AD9BD500AF6CFF /* Products */,
 			);
@@ -71,13 +74,13 @@
 				EC92540E26AD9BD500AF6CFF /* AppDelegate.swift */,
 				EC92543F26AEBA1F00AF6CFF /* UIImage+downloadImage.swift */,
 				EC92541026AD9BD500AF6CFF /* SceneDelegate.swift */,
-				EC92541426AD9BD500AF6CFF /* Main.storyboard */,
-				EC92543C26ADC7F700AF6CFF /* Views */,
+				EC92542A26AD9E0100AF6CFF /* Models */,
+				EC92543726ADB31000AF6CFF /* Networking */,
+				EC92545126B1974500AF6CFF /* View */,
+				EC92543C26ADC7F700AF6CFF /* Controllers */,
 				EC92541726AD9BD900AF6CFF /* Assets.xcassets */,
 				EC92541926AD9BD900AF6CFF /* LaunchScreen.storyboard */,
 				EC92541C26AD9BD900AF6CFF /* Info.plist */,
-				EC92543726ADB31000AF6CFF /* Networking */,
-				EC92542A26AD9E0100AF6CFF /* Models */,
 			);
 			path = CocktailsInfo;
 			sourceTree = "<group>";
@@ -99,14 +102,22 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		EC92543C26ADC7F700AF6CFF /* Views */ = {
+		EC92543C26ADC7F700AF6CFF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				EC92542426AD9C9200AF6CFF /* SearchViewController.swift */,
 				EC92543926ADC7EF00AF6CFF /* DetailViewController.swift */,
 				EC92542726AD9D5C00AF6CFF /* CocktailViewCell.swift */,
 			);
-			path = Views;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC92545126B1974500AF6CFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC92541426AD9BD500AF6CFF /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC92545426B2C95B00AF6CFF /* README.MD in Resources */,
 				EC92541B26AD9BD900AF6CFF /* LaunchScreen.storyboard in Resources */,
 				EC92541826AD9BD900AF6CFF /* Assets.xcassets in Resources */,
 				EC92541626AD9BD500AF6CFF /* Main.storyboard in Resources */,

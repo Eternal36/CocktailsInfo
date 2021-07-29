@@ -8,7 +8,8 @@
 import Foundation
 
 struct CocktailManager {
-        
+    
+    let cache = NSCache<AnyObject, AnyObject>()
     var onCompletion: ((CocktailData) -> Void)?
     
     func searchForCocktails(searchText: String) {
@@ -18,15 +19,25 @@ struct CocktailManager {
         let task = session.dataTask(with: url) { data, response, error in
             DispatchQueue.main.async {
                 if error != nil {
-                    print("Some error")
+                    guard let fromCache = cache.object(forKey: urlString as AnyObject) else {
+                        print("Some error")
+                        return
+                    }
+                    onCompletion!(fromCache as! CocktailData)
                     return
                 }
                 guard let data = data else {
                     print("No data")
                     return
                 }
-                guard let coctails = parseJSON(withData: data) else { return }
-                self.onCompletion?(coctails)
+                guard let fromCache = cache.object(forKey: urlString as AnyObject) else {
+                    guard let coctails = parseJSON(withData: data) else { return }
+                    onCompletion?(coctails)
+                    cache.setObject(coctails as AnyObject, forKey: urlString as AnyObject)
+                    return
+                }
+                onCompletion!(fromCache as! CocktailData)
+                return
             }
         }
         task.resume()
